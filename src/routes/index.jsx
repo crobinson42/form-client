@@ -11,10 +11,6 @@ const Login = asyncComponent(() => import('pages/Login'))
 
 export const history = createBrowserHistory()
 
-// make our history available globally
-window.app = {}
-window.app.history = history
-
 export default () => (
   <Router history={history}>
     <Switch>

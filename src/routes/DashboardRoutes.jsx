@@ -7,11 +7,13 @@ import AuthenticatedRoutes from './AuthenticatedRoutes'
 import DashboardPageWrapper from 'components/DashboardWrapper'
 
 const Dashboard = asyncComponent(() => import('pages/Dashboard'))
+const Settings = asyncComponent(() => import('pages/Settings'))
 
-const DashboardRoutes = () => (
+const DashboardRoutes = (props) => (
   <DashboardPageWrapper>
     <Switch>
       <Route exact path="/dashboard" component={Dashboard} />
+      <Route path="/dashboard/settings" component={Settings} />
     </Switch>
   </DashboardPageWrapper>
 )
