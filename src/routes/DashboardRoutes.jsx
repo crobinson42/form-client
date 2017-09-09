@@ -3,13 +3,13 @@ import { Route, Switch } from 'react-router-dom'
 
 import asyncComponent from 'components/AsyncComponent/index'
 
-import AuthenticatedRoutes from './AuthenticatedRoutes'
+// import AuthenticatedRoutes from './AuthenticatedRoutes'
 import DashboardPageWrapper from 'components/DashboardWrapper'
 
 const Dashboard = asyncComponent(() => import('pages/Dashboard'))
 const Settings = asyncComponent(() => import('pages/Settings'))
 
-const DashboardRoutes = (props) => (
+const DashboardRoutes = () => (
   <DashboardPageWrapper>
     <Switch>
       <Route exact path="/dashboard" component={Dashboard} />
