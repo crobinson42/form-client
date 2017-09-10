@@ -3,7 +3,8 @@ main {
   margin: 10px; }
 
 .sidebar {
-  flex: 0 0 230px; }
+  flex: 0 0 230px;
+  height: 100%; }
   .sidebar > li {
     list-style-type: none;
     padding: 10px; }

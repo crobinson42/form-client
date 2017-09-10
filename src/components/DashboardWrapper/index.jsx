@@ -6,8 +6,10 @@ import Sidebar from './Sidebar'
 import './index.css'
 
 const DashboardWrapper = ({ children }) => (
-  <div>
-    <Navbar />
+  <div className="">
+    <div>
+      <Navbar />
+    </div>
 
     <div className="d-flex">
       <Sidebar />
